@@ -42,4 +42,8 @@ La légère différence s'explique par la fait que dpkg ne s'occupe pas des dép
 
 Exercice 2.
 
+La commande ls est installée à partir de la commande GNU Core Utilities. On peut obtenir cette information grâce à la commande "dpkg -S $(which -a ls)".
 
+![image](https://user-images.githubusercontent.com/104362418/192242675-be5090ca-61e8-4569-918b-616b49f56871.png)
+
+On retrouve donc bien le nom du package au début de la ligne, ici coreutils.
