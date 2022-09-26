@@ -5,6 +5,31 @@
 ![image](https://user-images.githubusercontent.com/104362418/192205618-30d0941c-f5d8-4ee7-ab51-c73038a0e845.png)
 
 2 -- J'ai donc créée un alias nommé "maj" à partir des commandes précédentes. Pour que notre alias ne soit pas perdu au prochain redémarrage, il faut modifier le fichier "bashrc".
+
 ![image](https://user-images.githubusercontent.com/104362418/192207272-4a793944-8389-4f5c-a234-9e510bc81cc5.png)
+
 Le ";" sert à faire d'abord la première commande puis la deuxième.
 
+3 -- En faisant un "cat" du fichier "/var/log/dpkg.log" pour obtenir les 5 derniers paquets installés sur ma machine.
+
+![image](https://user-images.githubusercontent.com/104362418/192208194-0c6ebe9b-0d53-41fb-9d2f-e6f2ed4bac9b.png)
+
+On retrouve bien les 5 derniers paquets installés sur ma machine grâce au ligne "status installed nom_du_paquet"
+
+4 -- Les 5 derniers paquets installés avec la commandes "apt install" sont : 
+
+![image](https://user-images.githubusercontent.com/104362418/192210064-f0905357-0a99-4fba-a02b-1249edbd7777.png)
+
+Je suis arrivé à ce résultat en faisant un "cat" du fichier nommé "/var/log/apt/history.log".
+
+5 -- Voici les deux commandes dont je me suis servi pour compter le nombre total de paquets installés sur la machine:
+
+![image](https://user-images.githubusercontent.com/104362418/192212088-c7a09872-2f6a-4bbc-a8a5-18a2a79fc58a.png)
+
+La légère différence s'explique par la fait que dpkg ne s'occupe pas des dépendances. Par conséquent, la première commande affiche les dépendances, pas la deuxième. On ne peut pas utiliser le fichier "dpkg.log" car ils listent tout l'historique et pas seulement les paquets installés.
+
+6 -- Il y a 13 listes de paquets disponibles en téléchargement sur les dépôts Ubuntu :
+
+![image](https://user-images.githubusercontent.com/104362418/192214673-b1a6b106-1879-45c5-a9ab-d1a112f6b9c1.png)
+
+7 -- 
