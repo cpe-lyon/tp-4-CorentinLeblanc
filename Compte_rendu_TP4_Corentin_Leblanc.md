@@ -47,3 +47,13 @@ La commande ls est installée à partir de la commande GNU Core Utilities. On pe
 ![image](https://user-images.githubusercontent.com/104362418/192242675-be5090ca-61e8-4569-918b-616b49f56871.png)
 
 On retrouve donc bien le nom du package au début de la ligne, ici coreutils.
+
+![image](https://user-images.githubusercontent.com/104362418/192243606-ffbf3490-54af-470a-87c2-a15a7d821d6c.png)
+
+![image](https://user-images.githubusercontent.com/104362418/192243696-ee2ec8bc-adf0-40ab-86ee-c3a609b0a643.png)
+
+Exercice 3.
+
+
+
+
