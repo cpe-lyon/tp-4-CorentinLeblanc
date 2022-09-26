@@ -48,12 +48,15 @@ La commande ls est installée à partir de la commande GNU Core Utilities. On pe
 
 On retrouve donc bien le nom du package au début de la ligne, ici coreutils.
 
-![image](https://user-images.githubusercontent.com/104362418/192243606-ffbf3490-54af-470a-87c2-a15a7d821d6c.png)
+![image](https://user-images.githubusercontent.com/104362418/192245919-d1ad43d8-b4a3-4827-877c-d8482f6cbba2.png)
 
 ![image](https://user-images.githubusercontent.com/104362418/192243696-ee2ec8bc-adf0-40ab-86ee-c3a609b0a643.png)
 
 Exercice 3.
 
+Grâce à la commande "apt list --installed | grep nom_du_package", je peux savoir si le package est installé ou pas. 
 
+![image](https://user-images.githubusercontent.com/104362418/192246754-a53e1571-5b95-42e3-b3be-b0bf1e5a6aa4.png)
 
+Le package "burcado" n'est pas installé alors que "coreutils" est bien installé car on a un résultat.
 
