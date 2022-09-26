@@ -1,5 +1,7 @@
 **Compte rendu TP 4 --Gestion des paquets**
 
+Exercice 1. Commandes de base
+
 1 -- Pour mettre a jour le système je me suis servis des commandes "sudo apt update" puis "sudo apt upgrade".
 ![image](https://user-images.githubusercontent.com/104362418/192204814-3eb2a78d-8b09-4fff-8891-76c723410413.png)
 ![image](https://user-images.githubusercontent.com/104362418/192205618-30d0941c-f5d8-4ee7-ab51-c73038a0e845.png)
@@ -28,8 +30,16 @@ Je suis arrivé à ce résultat en faisant un "cat" du fichier nommé "/var/log/
 
 La légère différence s'explique par la fait que dpkg ne s'occupe pas des dépendances. Par conséquent, la première commande affiche les dépendances, pas la deuxième. On ne peut pas utiliser le fichier "dpkg.log" car ils listent tout l'historique et pas seulement les paquets installés.
 
-6 -- Il y a 13 listes de paquets disponibles en téléchargement sur les dépôts Ubuntu :
+6 -- Il y a 68953 paquets disponibles en téléchargement sur les dépôts Ubuntu :
 
-![image](https://user-images.githubusercontent.com/104362418/192214673-b1a6b106-1879-45c5-a9ab-d1a112f6b9c1.png)
+![image](https://user-images.githubusercontent.com/104362418/192219065-1c421b56-5e94-4996-a25d-c55f15440c3b.png)
 
-7 -- 
+7 -- Les paquets "glances","tldr" et "hollywood" servent à afficher l'état des principales ressources d'un système, de sa charge et du fonctionnement des applications. "Hollywood" simule une interface de hacker mais ne sert à rien. Je n'ai pas réussi à faire fonctionner "tldr".
+
+8 -- Le paquet "sudoku" permet de jouer au sudoku. J'ai pu l'installé grâce a "sudo apt install sudoku".
+
+![image](https://user-images.githubusercontent.com/104362418/192221478-48546e9d-69ed-4a8c-8837-43de406dcf63.png)
+
+Exercice 2.
+
+
