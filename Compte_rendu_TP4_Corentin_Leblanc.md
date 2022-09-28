@@ -78,7 +78,7 @@ Lynx quand à lui est un navigateur web uniquement en mode texte utilisable via 
 
 Exercice 6.
 
-J'ai donc commencé par réalisé toutes les commandes données dans la question 1. PPA -> Personal Package Archives(Utilisé lorsque certains logiciels ne figurent pas dans les dépôts officiels).
+1 -- J'ai donc commencé par réalisé toutes les commandes données dans la question 1. PPA -> Personal Package Archives(Utilisé lorsque certains logiciels ne figurent pas dans les dépôts officiels).
 
 ![image](https://user-images.githubusercontent.com/104362418/192724431-91b84d9c-c48e-4a8e-bfa2-05e7a1d65e23.png)
 
@@ -86,8 +86,8 @@ Vu qu'il n'existe pas de dépôts officiels de Java par Oracle, on ne trouve pas
 
 ![image](https://user-images.githubusercontent.com/104362418/192724751-b88d1086-af19-4732-aebe-d6c6d900a302.png)
 
-Un nouveau dossier nommé "source.list.d" à bien été créé. 
-Voici son contenu : 
+2 -- Un nouveau dossier nommé "source.list.d" à bien été créé. 
+     Voici son contenu : 
 
 ![image](https://user-images.githubusercontent.com/104362418/192725332-58f274d8-ce8d-4258-a525-cb5431080d37.png)
 
