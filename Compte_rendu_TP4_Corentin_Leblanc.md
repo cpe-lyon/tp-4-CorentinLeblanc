@@ -60,3 +60,57 @@ Grâce à la commande "apt list --installed | grep nom_du_package", je peux savo
 
 Le package "burcado" n'est pas installé alors que "coreutils" est bien installé car on a un résultat.
 
+A trouver pour la suite
+
+Exercice 4.
+
+Voici la liste des programmes qui sont livrés avec le package coreutils. 
+
+A trouver pour la suite 
+
+Exercice 5.
+
+Emacs est un éditeur de texte puissant qui sert pour beaucoup de langages. Il peut également servor de navigateur internet, de client mail.
+
+![image](https://user-images.githubusercontent.com/104362418/192722341-d64689f7-9dff-4f5b-a02a-8aa7f9119642.png)
+
+Lynx quand à lui est un navigateur web uniquement en mode texte utilisable via une console ou un terminal. Toutes la navigations se fait au clavier avec les différents éléments que peuvent avoir une page web(exemple : les liens hypertextes sont d'une couleur bien visible). Il est très utilisé en tant que navigateur adapté aux déficiences visuelles car il est facile d'utilisation et dispose même d'un synthétiseur vocal.
+
+Exercice 6.
+
+J'ai donc commencé par réalisé toutes les commandes données dans la question 1. PPA -> Personal Package Archives(Utilisé lorsque certains logiciels ne figurent pas dans les dépôts officiels).
+
+![image](https://user-images.githubusercontent.com/104362418/192724431-91b84d9c-c48e-4a8e-bfa2-05e7a1d65e23.png)
+
+Vu qu'il n'existe pas de dépôts officiels de Java par Oracle, on ne trouve pas le package lorsque l'on souhaite l'installer.
+
+![image](https://user-images.githubusercontent.com/104362418/192724751-b88d1086-af19-4732-aebe-d6c6d900a302.png)
+
+Un nouveau dossier nommé "source.list.d" à bien été créé. 
+Voici son contenu : 
+
+![image](https://user-images.githubusercontent.com/104362418/192725332-58f274d8-ce8d-4258-a525-cb5431080d37.png)
+
+Il contient un fichier avec l'extension ".list" qui lui même contient l'adresse de notre dépot personnel ou PPA.
+
+Exercice 7.
+
+1 -- J'ai donc cloner le dépot git demandé
+
+![image](https://user-images.githubusercontent.com/104362418/192726110-1e062991-033c-4567-9296-6a38d790e4f5.png)
+
+2 -- J'ai par la suite installer le package "make" pour pouvoir éxecuter le Makefile présent après le clône du dépot git. J'ai installé les paquets manquants puis procéder à l'installation en local avec la commande "make install PREFIX=~/.local. Je peux donc désormais admirer un jolie bonsai pour me détendre lorsque le TP devient trop complexe.
+
+![image](https://user-images.githubusercontent.com/104362418/192730316-4ade22e5-f6a7-4d9e-b896-63aa382c7c67.png)
+
+4 -- J'ai donc recommencé la compilation à l''aide de la commande checkinstall :
+
+![image](https://user-images.githubusercontent.com/104362418/192732530-1e4db842-6612-4f15-9d71-94ee08f67605.png)
+
+Il y a bien un paquet en extension ".deb" qui à été créé et je peux également éxecuté un bonsai depuis n'importe quel endroit.
+
+![image](https://user-images.githubusercontent.com/104362418/192732947-4de278d4-9d3e-4965-92f6-ece636a1cf89.png)
+
+
+
+
