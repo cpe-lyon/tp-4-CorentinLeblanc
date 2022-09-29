@@ -136,10 +136,22 @@ Création du dépôt personnel avec reprepro
 
 ![image](https://user-images.githubusercontent.com/104362418/192966707-c8333ecb-09ac-42fc-ac74-d184b9ff813a.png)
 
-5 -- 
+5 -- Voici la copie demandé et l'exécution de la commande suivante :
 
+![image](https://user-images.githubusercontent.com/104362418/192982208-3850aa1c-be83-46a9-b404-f6b7a25fe689.png)
 
+![image](https://user-images.githubusercontent.com/104362418/192982277-f0915c7a-178b-4fa6-9857-bc6d2f99cc8f.png)
 
+6 -- J'ai créer une fichier dans le dossier "/etc/apt/sources.list.d", puis renseigné la commande demandé.
 
+![image](https://user-images.githubusercontent.com/104362418/192983285-8bfa2273-3203-4906-838d-ecd6c3e4515e.png)
 
+7 -- Une erreur ressort en effet, ce n'est pas signé.
 
+![image](https://user-images.githubusercontent.com/104362418/192983949-9aa3b6d1-1716-4f05-88e4-5a38637f0f3f.png)
+
+Signature du dépôt avec GPG
+
+1 -- J'ai effectué la commande demandé, il a fallu que je renseigne mon nom d'utilisateur,mon email et ma passphrase.
+
+2 -- J'ai rajouté la ligne demandé au fichier distribution. 
