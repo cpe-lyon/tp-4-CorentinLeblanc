@@ -69,7 +69,11 @@ J'ai utilisé la commande "apt show coreutils":
 
 Exercice 5.
 
-Emacs est un éditeur de texte puissant qui sert pour beaucoup de langages. Il peut également servor de navigateur internet, de client mail.
+Voici l'interface ou j'ai pu installer les packages demandés.
+
+![image](https://user-images.githubusercontent.com/104362418/192954637-d2c7218b-301e-4b76-bf28-b5e3da3c8079.png)
+
+Emacs est un éditeur de texte puissant qui sert pour beaucoup de langages. Il peut également servir de navigateur internet, de client mail.
 
 ![image](https://user-images.githubusercontent.com/104362418/192722341-d64689f7-9dff-4f5b-a02a-8aa7f9119642.png)
 
