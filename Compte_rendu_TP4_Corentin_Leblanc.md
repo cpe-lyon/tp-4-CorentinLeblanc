@@ -54,13 +54,11 @@ On retrouve donc bien le nom du package au début de la ligne, ici coreutils.
 
 Exercice 3.
 
-Grâce à la commande "apt list --installed | grep nom_du_package", je peux savoir si le package est installé ou pas. 
+Voici la commande que j'ai utilisé pour arrivé à savoir si un package est installé ou non.
 
-![image](https://user-images.githubusercontent.com/104362418/192246754-a53e1571-5b95-42e3-b3be-b0bf1e5a6aa4.png)
+![image](https://user-images.githubusercontent.com/104362418/192952729-1f92fd08-78dc-4e47-b1e2-7a73dad057a6.png)
 
-Le package "burcado" n'est pas installé alors que "coreutils" est bien installé car on a un résultat.
-
-A trouver pour la suite
+Le "grep "^i" sert a vérifier le commentaire qui apparaît en résultat de la commande, il y ici deux i si le programme est présent sinon il n'est pas installé.
 
 Exercice 4.
 
