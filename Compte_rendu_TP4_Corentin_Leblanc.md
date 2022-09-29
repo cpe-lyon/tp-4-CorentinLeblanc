@@ -120,9 +120,9 @@ Création d'un paquet Debian avec dpkg-deb
 
 2 -- J'ai ensuite créé un fichier "control" grâce à la commande "touch".
 
-3 -- Une erreur est renvoyé lorsque je souhaite exécuter la commande qui sert a construire le paquet
+3 -- Il a fallu que j'enlève les commentaires pour que la commande réussisse
 
-![image](https://user-images.githubusercontent.com/104362418/192957853-f4fa70b5-03ee-48f2-82f0-5119df26c766.png)
+![image](https://user-images.githubusercontent.com/104362418/192963904-a2772dff-d192-4bbf-9995-952ca0e03482.png)
 
 Création du dépôt personnel avec reprepro
 
@@ -130,9 +130,9 @@ Création du dépôt personnel avec reprepro
 
 2 -- Même chose que la question précédente pour la création de sous-dossiers
 
-3 -- Il a fallu que j'enlève les commentaires pour que la commande réussisse
+3 -- 
 
-![image](https://user-images.githubusercontent.com/104362418/192963598-81aeabd6-7e8d-4cf4-9649-cef6a1431437.png)
+
 
 
 
