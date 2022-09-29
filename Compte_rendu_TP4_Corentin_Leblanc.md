@@ -63,8 +63,9 @@ Le "grep "^i" sert a vérifier le commentaire qui apparaît en résultat de la c
 Exercice 4.
 
 Voici la liste des programmes qui sont livrés avec le package coreutils. 
+J'ai utilisé la commande "apt show coreutils":
 
-A trouver pour la suite 
+![image](https://user-images.githubusercontent.com/104362418/192953482-850fa3d9-4d6b-441b-bc79-f18bf76663f9.png)
 
 Exercice 5.
 
@@ -109,6 +110,8 @@ Il y a bien un paquet en extension ".deb" qui à été créé et je peux égalem
 
 ![image](https://user-images.githubusercontent.com/104362418/192732947-4de278d4-9d3e-4965-92f6-ece636a1cf89.png)
 
+Exercice 8.
 
+1 -- 
 
 
