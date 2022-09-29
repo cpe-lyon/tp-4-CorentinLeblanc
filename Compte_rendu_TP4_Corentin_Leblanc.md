@@ -115,7 +115,21 @@ Il y a bien un paquet en extension ".deb" qui à été créé et je peux égalem
 ![image](https://user-images.githubusercontent.com/104362418/192732947-4de278d4-9d3e-4965-92f6-ece636a1cf89.png)
 
 Exercice 8.
+Création d'un paquet Debian avec dpkg-deb
+1 -- J'ai commencé par créer plusieurs sous-dossiers comme demandé dans la question et ensuite j'ai copié le script réalisée à l'exercice 2 dans le repértoire /usr/local/bin grâce à la commande "cp"
 
-1 -- 
+2 -- J'ai ensuite créé un fichier "control" grâce à la commande "touch".
+
+3 -- Une erreur est renvoyé lorsque je souhaite exécuter la commande qui sert a construire le paquet
+
+![image](https://user-images.githubusercontent.com/104362418/192957853-f4fa70b5-03ee-48f2-82f0-5119df26c766.png)
+
+Création du dépôt personnel avec reprepro
+1 -- La création du dossier "repo-cpe" c'est faite avec mkdir
+
+2 -- Même chose que la question précédente pour la création de sous-dossiers
+
+3 -- 
+
 
 
