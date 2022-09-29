@@ -130,7 +130,13 @@ Création du dépôt personnel avec reprepro
 
 2 -- Même chose que la question précédente pour la création de sous-dossiers
 
-3 -- 
+3 -- J'ai bien créé le fichier distributions dans le fichier conf grâce à "touch" puis "nano" pour le modifier.
+
+4 -- Voici l'exécution de la commande
+
+![image](https://user-images.githubusercontent.com/104362418/192966707-c8333ecb-09ac-42fc-ac74-d184b9ff813a.png)
+
+5 -- 
 
 
 
