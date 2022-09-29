@@ -155,3 +155,20 @@ Signature du dépôt avec GPG
 1 -- J'ai effectué la commande demandé, il a fallu que je renseigne mon nom d'utilisateur,mon email et ma passphrase.
 
 2 -- J'ai rajouté la ligne demandé au fichier distribution. 
+
+![image](https://user-images.githubusercontent.com/104362418/192986110-55d3325f-3004-4bea-964f-19d4e371c71a.png)
+
+3 -- Puis j'ai ajouté la clé a mon dépôt, cette méthode n'est pas sécurisée et obsolète. En entreprise on utiliserait gpg-agent.
+
+![image](https://user-images.githubusercontent.com/104362418/192986561-e8cb679f-cc08-4ac4-ab5f-100ee7931d35.png)
+
+On m'a demandé de renseigné ma passphrase et cela à fonctionné.
+
+4 -- 
+![image](https://user-images.githubusercontent.com/104362418/192987810-30de862f-275f-4688-b1b8-a63a4fa02060.png)
+
+5 -- 
+![image](https://user-images.githubusercontent.com/104362418/192988032-717c5a11-212e-4531-bece-eac5038d997c.png)
+
+
+
