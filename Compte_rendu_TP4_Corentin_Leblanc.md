@@ -125,11 +125,15 @@ Création d'un paquet Debian avec dpkg-deb
 ![image](https://user-images.githubusercontent.com/104362418/192957853-f4fa70b5-03ee-48f2-82f0-5119df26c766.png)
 
 Création du dépôt personnel avec reprepro
+
 1 -- La création du dossier "repo-cpe" c'est faite avec mkdir
 
 2 -- Même chose que la question précédente pour la création de sous-dossiers
 
-3 -- 
+3 -- Il a fallu que j'enlève les commentaires pour que la commande réussisse
+
+![image](https://user-images.githubusercontent.com/104362418/192963598-81aeabd6-7e8d-4cf4-9649-cef6a1431437.png)
+
 
 
 
