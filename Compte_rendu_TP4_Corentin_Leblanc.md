@@ -1,48 +1,48 @@
 **Compte rendu TP 4 --Gestion des paquets**
 
-Exercice 1. Commandes de base
+**Exercice 1. Commandes de base**
 
 1 -- Pour mettre a jour le système je me suis servis des commandes "sudo apt update" puis "sudo apt upgrade".
 ![image](https://user-images.githubusercontent.com/104362418/192204814-3eb2a78d-8b09-4fff-8891-76c723410413.png)
 ![image](https://user-images.githubusercontent.com/104362418/192205618-30d0941c-f5d8-4ee7-ab51-c73038a0e845.png)
 
-2 -- J'ai donc créée un alias nommé "maj" à partir des commandes précédentes. Pour que notre alias ne soit pas perdu au prochain redémarrage, il faut modifier le fichier "bashrc".
+2 -- J'ai donc créée un alias nommé **"maj"** à partir des commandes précédentes. Pour que notre alias ne soit pas perdu au prochain redémarrage, il faut modifier le fichier **"bashrc"**.
 
 ![image](https://user-images.githubusercontent.com/104362418/192207272-4a793944-8389-4f5c-a234-9e510bc81cc5.png)
 
-Le ";" sert à faire d'abord la première commande puis la deuxième.
+Le **";"** sert à faire d'abord la première commande puis la deuxième.
 
-3 -- En faisant un "cat" du fichier "/var/log/dpkg.log" pour obtenir les 5 derniers paquets installés sur ma machine.
+3 -- En faisant un **"cat"** du fichier **"/var/log/dpkg.log"** pour obtenir les 5 derniers paquets installés sur ma machine.
 
 ![image](https://user-images.githubusercontent.com/104362418/192208194-0c6ebe9b-0d53-41fb-9d2f-e6f2ed4bac9b.png)
 
-On retrouve bien les 5 derniers paquets installés sur ma machine grâce au ligne "status installed nom_du_paquet"
+On retrouve bien les 5 derniers paquets installés sur ma machine grâce au ligne **"status installed nom_du_paquet"**
 
-4 -- Les 5 derniers paquets installés avec la commandes "apt install" sont : 
+4 -- Les 5 derniers paquets installés avec la commandes **"apt install"** sont : 
 
 ![image](https://user-images.githubusercontent.com/104362418/192210064-f0905357-0a99-4fba-a02b-1249edbd7777.png)
 
-Je suis arrivé à ce résultat en faisant un "cat" du fichier nommé "/var/log/apt/history.log".
+Je suis arrivé à ce résultat en faisant un "cat" du fichier nommé **"/var/log/apt/history.log"**.
 
 5 -- Voici les deux commandes dont je me suis servi pour compter le nombre total de paquets installés sur la machine:
 
 ![image](https://user-images.githubusercontent.com/104362418/192212088-c7a09872-2f6a-4bbc-a8a5-18a2a79fc58a.png)
 
-La légère différence s'explique par la fait que dpkg ne s'occupe pas des dépendances. Par conséquent, la première commande affiche les dépendances, pas la deuxième. On ne peut pas utiliser le fichier "dpkg.log" car ils listent tout l'historique et pas seulement les paquets installés.
+La légère différence s'explique par la fait que dpkg ne s'occupe pas des dépendances. Par conséquent, la première commande affiche les dépendances, pas la deuxième. On ne peut pas utiliser le fichier **"dpkg.log"** car ils listent tout l'historique et pas seulement les paquets installés.
 
 6 -- Il y a 68953 paquets disponibles en téléchargement sur les dépôts Ubuntu :
 
 ![image](https://user-images.githubusercontent.com/104362418/192219065-1c421b56-5e94-4996-a25d-c55f15440c3b.png)
 
-7 -- Les paquets "glances","tldr" et "hollywood" servent à afficher l'état des principales ressources d'un système, de sa charge et du fonctionnement des applications. "Hollywood" simule une interface de hacker mais ne sert à rien. Je n'ai pas réussi à faire fonctionner "tldr".
+7 -- Les paquets **"glances"**,**"tldr"** et **"hollywood"** servent à afficher l'état des principales ressources d'un système, de sa charge et du fonctionnement des applications. "Hollywood" simule une interface de hacker mais ne sert à rien. Je n'ai pas réussi à faire fonctionner **"tldr"**.
 
-8 -- Le paquet "sudoku" permet de jouer au sudoku. J'ai pu l'installé grâce a "sudo apt install sudoku".
+8 -- Le paquet **"sudoku"** permet de jouer au sudoku. J'ai pu l'installé grâce a **"sudo apt install sudoku"**.
 
 ![image](https://user-images.githubusercontent.com/104362418/192221478-48546e9d-69ed-4a8c-8837-43de406dcf63.png)
 
-Exercice 2.
+**Exercice 2.**
 
-La commande ls est installée à partir de la commande GNU Core Utilities. On peut obtenir cette information grâce à la commande "dpkg -S $(which -a ls)".
+La commande ls est installée à partir de la commande GNU Core Utilities. On peut obtenir cette information grâce à la commande **"dpkg -S $(which -a ls)"**.
 
 ![image](https://user-images.githubusercontent.com/104362418/192242675-be5090ca-61e8-4569-918b-616b49f56871.png)
 
@@ -52,7 +52,7 @@ On retrouve donc bien le nom du package au début de la ligne, ici coreutils.
 
 ![image](https://user-images.githubusercontent.com/104362418/192243696-ee2ec8bc-adf0-40ab-86ee-c3a609b0a643.png)
 
-Exercice 3.
+**Exercice 3.**
 
 Voici la commande que j'ai utilisé pour arrivé à savoir si un package est installé ou non.
 
@@ -60,14 +60,14 @@ Voici la commande que j'ai utilisé pour arrivé à savoir si un package est ins
 
 Le "grep "^i" sert a vérifier le commentaire qui apparaît en résultat de la commande, il y ici deux i si le programme est présent sinon il n'est pas installé.
 
-Exercice 4.
+**Exercice 4.**
 
 Voici la liste des programmes qui sont livrés avec le package coreutils. 
-J'ai utilisé la commande "apt show coreutils":
+J'ai utilisé la commande **"apt show coreutils"**:
 
 ![image](https://user-images.githubusercontent.com/104362418/192953482-850fa3d9-4d6b-441b-bc79-f18bf76663f9.png)
 
-Exercice 5.
+**Exercice 5.**
 
 Voici l'interface ou j'ai pu installer les packages demandés.
 
@@ -79,7 +79,7 @@ Emacs est un éditeur de texte puissant qui sert pour beaucoup de langages. Il p
 
 Lynx quand à lui est un navigateur web uniquement en mode texte utilisable via une console ou un terminal. Toutes la navigations se fait au clavier avec les différents éléments que peuvent avoir une page web(exemple : les liens hypertextes sont d'une couleur bien visible). Il est très utilisé en tant que navigateur adapté aux déficiences visuelles car il est facile d'utilisation et dispose même d'un synthétiseur vocal.
 
-Exercice 6.
+**Exercice 6.**
 
 1 -- J'ai donc commencé par réalisé toutes les commandes données dans la question 1. PPA -> Personal Package Archives(Utilisé lorsque certains logiciels ne figurent pas dans les dépôts officiels).
 
@@ -94,15 +94,15 @@ Vu qu'il n'existe pas de dépôts officiels de Java par Oracle, on ne trouve pas
 
 ![image](https://user-images.githubusercontent.com/104362418/192725332-58f274d8-ce8d-4258-a525-cb5431080d37.png)
 
-Il contient un fichier avec l'extension ".list" qui lui même contient l'adresse de notre dépot personnel ou PPA.
+Il contient un fichier avec l'extension **".list"** qui lui même contient l'adresse de notre dépot personnel ou PPA.
 
-Exercice 7.
+**Exercice 7.**
 
 1 -- J'ai donc cloner le dépot git demandé
 
 ![image](https://user-images.githubusercontent.com/104362418/192726110-1e062991-033c-4567-9296-6a38d790e4f5.png)
 
-2 -- J'ai par la suite installer le package "make" pour pouvoir éxecuter le Makefile présent après le clône du dépot git. J'ai installé les paquets manquants puis procéder à l'installation en local avec la commande "make install PREFIX=~/.local. Je peux donc désormais admirer un jolie bonsai pour me détendre lorsque le TP devient trop complexe.
+2 -- J'ai par la suite installer le package **"make"** pour pouvoir éxecuter le Makefile présent après le clône du dépot git. J'ai installé les paquets manquants puis procéder à l'installation en local avec la commande "make install PREFIX=~/.local. Je peux donc désormais admirer un jolie bonsai pour me détendre lorsque le TP devient trop complexe.
 
 ![image](https://user-images.githubusercontent.com/104362418/192730316-4ade22e5-f6a7-4d9e-b896-63aa382c7c67.png)
 
@@ -110,15 +110,17 @@ Exercice 7.
 
 ![image](https://user-images.githubusercontent.com/104362418/192732530-1e4db842-6612-4f15-9d71-94ee08f67605.png)
 
-Il y a bien un paquet en extension ".deb" qui à été créé et je peux également éxecuté un bonsai depuis n'importe quel endroit.
+Il y a bien un paquet en extension **".deb"** qui à été créé et je peux également éxecuté un bonsai depuis n'importe quel endroit.
 
 ![image](https://user-images.githubusercontent.com/104362418/192732947-4de278d4-9d3e-4965-92f6-ece636a1cf89.png)
 
-Exercice 8.
-Création d'un paquet Debian avec dpkg-deb
-1 -- J'ai commencé par créer plusieurs sous-dossiers comme demandé dans la question et ensuite j'ai copié le script réalisée à l'exercice 2 dans le repértoire /usr/local/bin grâce à la commande "cp"
+**Exercice 8.**
 
-2 -- J'ai ensuite créé un fichier "control" grâce à la commande "touch".
+Création d'un paquet Debian avec dpkg-deb
+
+1 -- J'ai commencé par créer plusieurs sous-dossiers comme demandé dans la question et ensuite j'ai copié le script réalisée à l'exercice 2 dans le repértoire /usr/local/bin grâce à la commande **"cp"**.
+
+2 -- J'ai ensuite créé un fichier **"control"** grâce à la commande **"touch"**.
 
 3 -- Il a fallu que j'enlève les commentaires pour que la commande réussisse
 
@@ -126,11 +128,11 @@ Création d'un paquet Debian avec dpkg-deb
 
 Création du dépôt personnel avec reprepro
 
-1 -- La création du dossier "repo-cpe" c'est faite avec mkdir
+1 -- La création du dossier **"repo-cpe"** c'est faite avec mkdir
 
 2 -- Même chose que la question précédente pour la création de sous-dossiers
 
-3 -- J'ai bien créé le fichier distributions dans le fichier conf grâce à "touch" puis "nano" pour le modifier.
+3 -- J'ai bien créé le fichier distributions dans le fichier conf grâce à **"touch"** puis **"nano"** pour le modifier.
 
 4 -- Voici l'exécution de la commande
 
@@ -142,7 +144,7 @@ Création du dépôt personnel avec reprepro
 
 ![image](https://user-images.githubusercontent.com/104362418/192982277-f0915c7a-178b-4fa6-9857-bc6d2f99cc8f.png)
 
-6 -- J'ai créer une fichier dans le dossier "/etc/apt/sources.list.d", puis renseigné la commande demandé.
+6 -- J'ai créer une fichier dans le dossier **"/etc/apt/sources.list.d"**, puis renseigné la commande demandé.
 
 ![image](https://user-images.githubusercontent.com/104362418/192983285-8bfa2273-3203-4906-838d-ecd6c3e4515e.png)
 
