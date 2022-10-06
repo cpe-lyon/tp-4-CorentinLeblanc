@@ -1,6 +1,6 @@
 **Compte rendu TP 4 --Gestion des paquets**
 
-**Exercice 1. Commandes de base**
+**<ins>Exercice 1. Commandes de base</ins>**
 
 1 -- Pour mettre a jour le système je me suis servis des commandes "sudo apt update" puis "sudo apt upgrade".
 ![image](https://user-images.githubusercontent.com/104362418/192204814-3eb2a78d-8b09-4fff-8891-76c723410413.png)
@@ -40,7 +40,7 @@ La légère différence s'explique par la fait que dpkg ne s'occupe pas des dép
 
 ![image](https://user-images.githubusercontent.com/104362418/192221478-48546e9d-69ed-4a8c-8837-43de406dcf63.png)
 
-**Exercice 2.**
+**<ins>Exercice 2.</ins>**
 
 La commande ls est installée à partir de la commande GNU Core Utilities. On peut obtenir cette information grâce à la commande **"dpkg -S $(which -a ls)"**.
 
@@ -52,7 +52,7 @@ On retrouve donc bien le nom du package au début de la ligne, ici coreutils.
 
 ![image](https://user-images.githubusercontent.com/104362418/192243696-ee2ec8bc-adf0-40ab-86ee-c3a609b0a643.png)
 
-**Exercice 3.**
+**<ins>Exercice 3.</ins>**
 
 Voici la commande que j'ai utilisé pour arrivé à savoir si un package est installé ou non.
 
@@ -60,14 +60,14 @@ Voici la commande que j'ai utilisé pour arrivé à savoir si un package est ins
 
 Le "grep "^i" sert a vérifier le commentaire qui apparaît en résultat de la commande, il y ici deux i si le programme est présent sinon il n'est pas installé.
 
-**Exercice 4.**
+**<ins>Exercice 4.</ins>**
 
 Voici la liste des programmes qui sont livrés avec le package coreutils. 
 J'ai utilisé la commande **"apt show coreutils"**:
 
 ![image](https://user-images.githubusercontent.com/104362418/192953482-850fa3d9-4d6b-441b-bc79-f18bf76663f9.png)
 
-**Exercice 5.**
+**<ins>Exercice 5.</ins>**
 
 Voici l'interface ou j'ai pu installer les packages demandés.
 
@@ -79,7 +79,7 @@ Emacs est un éditeur de texte puissant qui sert pour beaucoup de langages. Il p
 
 Lynx quand à lui est un navigateur web uniquement en mode texte utilisable via une console ou un terminal. Toutes la navigations se fait au clavier avec les différents éléments que peuvent avoir une page web(exemple : les liens hypertextes sont d'une couleur bien visible). Il est très utilisé en tant que navigateur adapté aux déficiences visuelles car il est facile d'utilisation et dispose même d'un synthétiseur vocal.
 
-**Exercice 6.**
+**<ins>Exercice 6.</ins>**
 
 1 -- J'ai donc commencé par réalisé toutes les commandes données dans la question 1. PPA -> Personal Package Archives(Utilisé lorsque certains logiciels ne figurent pas dans les dépôts officiels).
 
@@ -96,7 +96,7 @@ Vu qu'il n'existe pas de dépôts officiels de Java par Oracle, on ne trouve pas
 
 Il contient un fichier avec l'extension **".list"** qui lui même contient l'adresse de notre dépot personnel ou PPA.
 
-**Exercice 7.**
+**<ins>Exercice 7.</ins>**
 
 1 -- J'ai donc cloner le dépot git demandé
 
@@ -114,7 +114,7 @@ Il y a bien un paquet en extension **".deb"** qui à été créé et je peux ég
 
 ![image](https://user-images.githubusercontent.com/104362418/192732947-4de278d4-9d3e-4965-92f6-ece636a1cf89.png)
 
-**Exercice 8.**
+**<ins>Exercice 8.</ins>**
 
 Création d'un paquet Debian avec dpkg-deb
 
