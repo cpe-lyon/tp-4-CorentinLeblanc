@@ -92,8 +92,11 @@ Emacs est un éditeur de texte puissant qui sert pour beaucoup de langages. Il p
 Lynx quand à lui est un navigateur web uniquement en mode texte utilisable via une console ou un terminal. Toutes la navigations se fait au clavier avec les différents éléments que peuvent avoir une page web(exemple : les liens hypertextes sont d'une couleur bien visible). Il est très utilisé en tant que navigateur adapté aux déficiences visuelles car il est facile d'utilisation et dispose même d'un synthétiseur vocal.
 
 Procédé pour installez emacs via aptitude :
+
 Lancer aptitude : aptitude
+
 chercher le paquet emacs en tapant /^emacs$
+
 Marquer le paquet pour installation avec +, puis procéder à l’installation en tapant deux fois
 sur g
 
