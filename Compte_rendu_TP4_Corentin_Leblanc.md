@@ -16,23 +16,29 @@ Le **";"** sert à faire d'abord la première commande puis la deuxième.
 
 ![image](https://user-images.githubusercontent.com/104362418/192208194-0c6ebe9b-0d53-41fb-9d2f-e6f2ed4bac9b.png)
 
-On retrouve bien les 5 derniers paquets installés sur ma machine grâce au ligne **"status installed nom_du_paquet"**
+On retrouve bien les 5 derniers paquets installés sur ma machine grâce au ligne **"status installed nom_du_paquet"**.
+On peut également utiliser la commande "**grep "apt install" /var/log/dpkg.log | tail -5 |cut -d' ' -f5 | cut -d: -f1**".
 
 4 -- Les 5 derniers paquets installés avec la commandes **"apt install"** sont : 
 
 ![image](https://user-images.githubusercontent.com/104362418/192210064-f0905357-0a99-4fba-a02b-1249edbd7777.png)
 
 Je suis arrivé à ce résultat en faisant un "cat" du fichier nommé **"/var/log/apt/history.log"**.
+On peut également utiliser la commande "**grep "apt install" /var/log/apt/history.log | cut -d" " -f4**".
 
 5 -- Voici les deux commandes dont je me suis servi pour compter le nombre total de paquets installés sur la machine:
 
 ![image](https://user-images.githubusercontent.com/104362418/192212088-c7a09872-2f6a-4bbc-a8a5-18a2a79fc58a.png)
 
-La légère différence s'explique par la fait que dpkg ne s'occupe pas des dépendances. Par conséquent, la première commande affiche les dépendances, pas la deuxième. On ne peut pas utiliser le fichier **"dpkg.log"** car ils listent tout l'historique et pas seulement les paquets installés.
+La petite différence s’explique seulement par les quelques lignes de texte informatif affichées par apt list
+On ne peut pas se contenter d’utiliser dpkg.log car il est vraisemblablement incomplet :
+les lignes les plus anciennes de ce fichier sont régulièrement archivées.
 
 6 -- Il y a 68953 paquets disponibles en téléchargement sur les dépôts Ubuntu :
 
 ![image](https://user-images.githubusercontent.com/104362418/192219065-1c421b56-5e94-4996-a25d-c55f15440c3b.png)
+
+On peut utiliser la commande "**apt list | wc -l**".
 
 7 -- Les paquets **"glances"**,**"tldr"** et **"hollywood"** servent à afficher l'état des principales ressources d'un système, de sa charge et du fonctionnement des applications. "Hollywood" simule une interface de hacker mais ne sert à rien. Je n'ai pas réussi à faire fonctionner **"tldr"**.
 
@@ -50,6 +56,8 @@ On retrouve donc bien le nom du package au début de la ligne, ici coreutils.
 
 ![image](https://user-images.githubusercontent.com/104362418/192245919-d1ad43d8-b4a3-4827-877c-d8482f6cbba2.png)
 
+La commande pour obtenir a partir de quel paquet est installé la commande ls est "**which ls | xargs dpkg -S**".
+
 ![image](https://user-images.githubusercontent.com/104362418/192243696-ee2ec8bc-adf0-40ab-86ee-c3a609b0a643.png)
 
 **<ins>Exercice 3.</ins>**
@@ -59,6 +67,7 @@ Voici la commande que j'ai utilisé pour arrivé à savoir si un package est ins
 ![image](https://user-images.githubusercontent.com/104362418/192952729-1f92fd08-78dc-4e47-b1e2-7a73dad057a6.png)
 
 Le "grep "^i" sert a vérifier le commentaire qui apparaît en résultat de la commande, il y ici deux i si le programme est présent sinon il n'est pas installé.
+On aurait pu aussi se servir de cette commande "**(dpkg -l "nomdupackage" | grep "^ii" > dev/null) && echo "installé" || echo "non installé"**".
 
 **<ins>Exercice 4.</ins>**
 
@@ -66,6 +75,9 @@ Voici la liste des programmes qui sont livrés avec le package coreutils.
 J'ai utilisé la commande **"apt show coreutils"**:
 
 ![image](https://user-images.githubusercontent.com/104362418/192953482-850fa3d9-4d6b-441b-bc79-f18bf76663f9.png)
+
+On peut se servir de la commande "**dpkg -L coreutils**".
+Il s'agit d'un alias pour la commande test
 
 **<ins>Exercice 5.</ins>**
 
@@ -78,6 +90,12 @@ Emacs est un éditeur de texte puissant qui sert pour beaucoup de langages. Il p
 ![image](https://user-images.githubusercontent.com/104362418/192722341-d64689f7-9dff-4f5b-a02a-8aa7f9119642.png)
 
 Lynx quand à lui est un navigateur web uniquement en mode texte utilisable via une console ou un terminal. Toutes la navigations se fait au clavier avec les différents éléments que peuvent avoir une page web(exemple : les liens hypertextes sont d'une couleur bien visible). Il est très utilisé en tant que navigateur adapté aux déficiences visuelles car il est facile d'utilisation et dispose même d'un synthétiseur vocal.
+
+Procédé pour installez emacs via aptitude :
+Lancer aptitude : aptitude
+chercher le paquet emacs en tapant /^emacs$
+Marquer le paquet pour installation avec +, puis procéder à l’installation en tapant deux fois
+sur g
 
 **<ins>Exercice 6.</ins>**
 
