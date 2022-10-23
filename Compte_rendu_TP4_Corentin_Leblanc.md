@@ -17,7 +17,7 @@ Le **";"** sert à faire d'abord la première commande puis la deuxième.
 ![image](https://user-images.githubusercontent.com/104362418/192208194-0c6ebe9b-0d53-41fb-9d2f-e6f2ed4bac9b.png)
 
 On retrouve bien les 5 derniers paquets installés sur ma machine grâce au ligne **"status installed nom_du_paquet"**.
-On peut également utiliser la commande "**grep "apt install" /var/log/dpkg.log | tail -5 |cut -d' ' -f5 | cut -d: -f1**".
+On peut également utiliser la commande "**grep " installed" /var/log/dpkg.log | tail -5 |cut -d' ' -f5 | cut -d: -f1**".
 
 4 -- Les 5 derniers paquets installés avec la commandes **"apt install"** sont : 
 
